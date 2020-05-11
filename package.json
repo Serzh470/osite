@@ -1,0 +1,26 @@
+{
+  "name": "osite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "html": "pug src/index.pug -w --pretty --out dists",
+    "scss": "sass src/index.scss dists/index.css",
+    "build": "pug src/index.pug -w --pretty --out dists",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "chalk": "^4.0.0",
+    "cssnano": "^4.1.10",
+    "postcss": "^7.0.29",
+    "precss": "^4.0.0",
+    "pug": "^2.0.4",
+    "pug-cli": "^1.0.0-alpha6",
+    "sugarss": "^2.0.0"
+  }
+}
