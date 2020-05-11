@@ -1,39 +1,9 @@
 @import "./variables.scss";
 @import "./normalize.css";
 @import "./fonts/fonts.css";
+@import "./layout/layout.scss";
+@import "./section/section.scss";
+@import "./container/container.scss";
 @import "./nav/nav.scss";
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 16px;
-
-  @media (min-width: $xs) {
-    max-width: 540px;
-  }
-
-  @media (min-width: $sm) {
-    max-width: 720px;
-  }
-
-  @media (min-width: $md) {
-    max-width: 960px;
-  }
-
-  @media (min-width: $lg) {
-    max-width: 1200px;
-  }
-}
-
-
-.section {
-  padding: 0 0 128px 0;
-  overflow: hidden;
-
-  @media (max-width: $md) {
-    padding: 0 0 96px 0;
-  }
-}
-  
-
+@import "./header/header.scss";
+@import "./about/about.scss";

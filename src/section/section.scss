@@ -1,0 +1,8 @@
+section {
+  padding: 0 0 128px 0;
+  overflow: hidden;
+
+  @media (max-width: $md) {
+    padding: 0 0 96px 0;
+  }
+}
