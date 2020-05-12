@@ -1,0 +1,29 @@
+.inspiration__grid {
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px;
+
+  @media (max-width: $md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $xs) {
+    grid-template-columns: 1fr;
+    padding: 10vw;
+  }
+}
+
+.inspiration__photo {
+  box-shadow: -5px 5px 10px 0px #cccccc;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,7 @@
+section
+  .container
+    h1 Вдохновение
+    .inspiration__grid
+      each item in media
+        a(href=item.link)
+          img.inspiration__photo(src=item.src)

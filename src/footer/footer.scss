@@ -1,0 +1,24 @@
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 32px 16px;
+}
+
+.footer__container {
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copyright {
+  font-family: $font-secondary;
+  font-size: $font-small;
+  line-height: $line-small;
+  color: $black-regular;
+}
+
+.footer__social {
+  margin: 0 8px;
+  width: 24px;
+  height: 24px;
+}
