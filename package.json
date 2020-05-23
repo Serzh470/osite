@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"npm run dev\" \"http-server ./dists -p 8080 \"",
     "dev": "nodemon --watch src -e js,pug,css,scss scripts/dev.js",
     "html": "pug src/index.pug -w --pretty --out dists",
     "scss": "sass src/index.scss dists/index.css",
@@ -24,5 +25,13 @@
     "pug": "^2.0.4",
     "pug-cli": "^1.0.0-alpha6",
     "sugarss": "^2.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "crypto": "^1.0.1",
+    "date-fns": "^2.14.0",
+    "dotenv": "^8.2.0",
+    "http-server": "^0.12.3",
+    "node-fetch": "^2.6.0"
   }
 }

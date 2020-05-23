@@ -1,7 +1,10 @@
+-var n = 1
 section
   .container
     h1 Вдохновение
-    .inspiration__grid
+    .gallery
       each item in media
-        a(href=item.link)
-          img.inspiration__photo(src=item.src)
+        div(class="gallery__img gallery__item--" + n++)
+          .photo
+            a(href=item.link)
+              img.gallery__img(src=item.src)
